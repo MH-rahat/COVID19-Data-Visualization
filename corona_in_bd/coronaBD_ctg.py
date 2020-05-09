@@ -49,10 +49,10 @@ for i,row in myDF.iterrows():
         r=6
     elif row_data >=3 and row_data <5 :
         a=0.3
-        r=4
+        r=5
     elif row_data >0 and row_data <3 :
         a=0.1
-        r=1
+        r=3
     folium.CircleMarker((row.lat,row.long), radius=r, weight=1,popup=str(row.Upozila)+' '+str(row_data), color='red', fill_color='red', fill_opacity=a).add_to(bdmap)
 
 # # #heatmap
