@@ -67,7 +67,7 @@ for i,row in myDF.iterrows():
 # # #--blur: the degree to which the circles blend together in the heatmap
 
     
-bdmap.add_child(plugins.HeatMap(data=myDF[['lat', 'long']].values, radius=18,blur=5))
+#bdmap.add_child(plugins.HeatMap(data=myDF[['lat', 'long']].values, radius=18,blur=5))
 
 #save the map as an html
 bdmap.save('ctgcorona_hitmap.html')
