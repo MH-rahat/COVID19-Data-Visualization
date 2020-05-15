@@ -108,7 +108,7 @@ zilla_gdf = zilla_gdf.drop_duplicates().reset_index()
 
 
 # Finally, we create our map and add a colourba
-slider_map = folium.Map(location = (23.6850, 90.3563), zoom_start = 6.5,tiles='cartodbpositron')
+slider_map = folium.Map(location = (23.6850, 90.3563), zoom_start = 5.8,tiles='cartodbpositron')
 
 
 
@@ -122,7 +122,7 @@ _ = TimeSliderChoropleth(
 _ = cmap.add_to(slider_map)
 cmap.caption = "Log of number of confirmed cases"
 
-slider_map.save(outfile='Time_mapping1.html')
+slider_map.save(outfile='Time_mapping.html')
 
 
 
